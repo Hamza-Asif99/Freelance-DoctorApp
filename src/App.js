@@ -1,23 +1,17 @@
 import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-
+// import AdminNavbar from './components/AdminNavbar';
+import Login from './components/auth/Login';
+import Signup from './components/auth/Signup';
+// import Auth from './components/auth/Auth';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Signup/>
+      {/* <AdminNavbar/> */}
+      {/* <Login/> */}
+      {/* <Auth/> */}
     </div>
   );
 }
